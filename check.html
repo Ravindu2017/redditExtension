@@ -1,0 +1,46 @@
+<style>
+    /* Style for the div container */
+    #infoBody {
+      display: flex;
+      justify-content: space-between; /* Aligns buttons to the sides */
+      padding: 10px;
+      background-color: #f0f0f0;
+      margin-top: 20px; /* Adds some space above the container */
+    }
+  
+    /* Style for the buttons */
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+  
+  <div id="infoBody"></div>
+  
+  <script>
+    // Select the div with id 'infoBody'
+    const infoBody = document.getElementById('infoBody');
+  
+    // Create the Previous button
+    const prevButton = document.createElement('button');
+    prevButton.innerHTML = 'Previous';
+  
+    // Add an onclick event listener to the Previous button
+    prevButton.onclick = function() {
+      alert('Previous button clicked!');
+    };
+  
+    // Create the Next button
+    const nextButton = document.createElement('button');
+    nextButton.innerHTML = 'Next';
+  
+    // Add an onclick event listener to the Next button
+    nextButton.onclick = function() {
+      alert('Next button clicked!');
+    };
+  
+    // Append the Previous and Next buttons to the div
+    infoBody.appendChild(prevButton);
+    infoBody.appendChild(nextButton);
+  </script>
+  
